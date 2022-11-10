@@ -18,10 +18,12 @@ const Header = () => {
         </div >
         <h1
           className="mx-auto mb-4 text-4xl font-semibold text-main-800 dark:text-blue-100  tracking-tighter transition duration-500 ease-in-out transform lg:w-1/2 lg:text-3xl" >
-
           {i18n.header.mainTitle[locale]}
-
         </h1 >
+        <h2     className="mx-auto mb-4 text-2xl font-semibold text-main-800 dark:text-blue-100" >
+          {i18n.header.secondaryTitle[locale]}
+
+        </h2>
       </div >
     </header >
   )
