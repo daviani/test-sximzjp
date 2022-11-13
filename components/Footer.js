@@ -35,6 +35,7 @@ const Footer = () => {
             <SiTailwindcss
               className="text-main-700 dark:text-main-200 sm:text-2xl text-lg mx-1" />
           </a >
+          {' ' + i18n.footer.descriptionTwo[locale]}
         </p >
         <div className="footer_box" >
                     <span

@@ -1,23 +1,24 @@
-const Filler = ({ percentage }) => {
+import { color } from '../lib/color'
 
-  let color = ''
+const Filler = ({ percentage }) => {
+  let colorFiller
+
   const defineColor = () => {
-    if (percentage > 0 && percentage < 24) {
-      return color = '7160E8'
-    } else if (percentage > 25 && percentage < 49) {
-      return color = '60ADE8'
-    } else if (percentage > 50 && percentage < 74) {
-      return color = '60E8B6'
-    } else {
-      return color = '30DB63'
+    if (percentage >= 0 && percentage <= 24) {
+      return colorFiller = color.purple
+    } else if (percentage >= 25 && percentage < 49) {
+      return colorFiller = color.blue
+    } else if (percentage >= 50 && percentage < 74) {
+      return colorFiller = color.greenMedium
+    } else if (percentage >= 75) {
+      return colorFiller = color.green
     }
   }
 
-  defineColor()
   return (
     <div
       className="filler"
-      style={{ width: `${percentage}%`, background: `#${color}` }}
+      style={{ width: `${percentage}%`, background: `${defineColor(percentage)}` }}
     />
   )
 }
