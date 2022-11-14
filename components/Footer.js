@@ -12,28 +12,28 @@ const Footer = () => {
           <div
             className="w-3 h-3 p-2 mr-2 rounded-full bg-gradient-to-tr from-blue-100 to-blue-700" />
           <h2
-            className="block p-2 text-xl font-medium tracking-tighter text-main-700 dark:text-main-200 lg:text-x lg:mr-8" >
+            className="block p-2 text-xl font-medium tracking-tighter text-main-700  lg:text-x lg:mr-8" >
             {i18n.footer.title[locale]}
           </h2 >
         </div >
         <p
-          className="inline-flex text-main-700 dark:text-main-200 px-2 sm:text-base text-sm m-3 md:m-0 tracking-tighter	" >
+          className="inline-flex text-main-700 px-2 sm:text-base text-sm m-3 md:m-0 tracking-tighter	" >
           {i18n.footer.descriptionOne[locale]}
           <a href={'https://nextjs.org/'} target={'https://nextjs.org/'} >
             <SiNextdotjs
-              className="text-main-700 dark:text-main-200 sm:text-2xl text-lg mx-1" />
+              className="text-main-700 sm:text-2xl text-lg mx-1" />
           </a >
           {' , '}
           <a href={'https://fr.reactjs.org//'}
              target={'https://fr.reactjs.org//'} >
             <FaReact
-              className="text-main-700 dark:text-main-200 sm:text-2xl text-lg mx-1" />
+              className="text-main-700 sm:text-2xl text-lg mx-1" />
           </a >
           {i18n.footer.and[locale]}
           <a href={'https://tailwindcss.com/'}
              target={'https://tailwindcss.com/'} >
             <SiTailwindcss
-              className="text-main-700 dark:text-main-200 sm:text-2xl text-lg mx-1" />
+              className="text-main-700 sm:text-2xl text-lg mx-1" />
           </a >
           {' ' + i18n.footer.descriptionTwo[locale]}
         </p >
@@ -43,7 +43,7 @@ const Footer = () => {
                     >
                         <a
                           href={'https://github.com/daviani/test-sximzjp'}
-                          className="text-main-700 dark:text-main-200 hover:font-bold mx-1"
+                          className="text-main-700 hover:font-bold mx-1"
                         >
                         GitHub
                         </a >

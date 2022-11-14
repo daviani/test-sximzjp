@@ -1,17 +1,17 @@
-import { color } from '../lib/color'
+import { colors } from '../lib/colors'
 
 const Filler = ({ percentage }) => {
   let colorFiller
 
   const defineColor = () => {
     if (percentage >= 0 && percentage <= 24) {
-      return colorFiller = color.purple
+      return colorFiller = colors.purple
     } else if (percentage >= 25 && percentage < 49) {
-      return colorFiller = color.blue
+      return colorFiller = colors.blue
     } else if (percentage >= 50 && percentage < 74) {
-      return colorFiller = color.greenMedium
+      return colorFiller = colors.greenMedium
     } else if (percentage >= 75) {
-      return colorFiller = color.green
+      return colorFiller = colors.green
     }
   }
 

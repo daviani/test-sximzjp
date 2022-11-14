@@ -10,7 +10,7 @@ const SwitchLanguage = () => {
   return (
     <>
       <div
-        className="outline-none focus:outline-none text-main-700 dark:text-main-200 dropdown" >
+        className="outline-none focus:outline-none text-main-700 dropdown" >
         <button type="button" aria-haspopup="true" aria-expanded="true" >
           <HiGlobeAlt
             className="text-3xl cursor-pointer"
@@ -20,7 +20,7 @@ const SwitchLanguage = () => {
         <div
           className="opacity-0 invisible dropdown-menu transition-all duration-300 transform origin-top-right -translate-y-2 scale-95" >
           <div
-            className=" px-4 py-3 text-main-700 dark:text-main-200 absolute right-0 mt-2 origin-top-right bg-blue-100 dark:bg-main-700 rounded-md shadow-lg outline-none"
+            className=" px-4 py-3 text-main-700  absolute right-0 mt-2 origin-top-right bg-blue-100  rounded-md shadow-lg outline-none"
             role="menu"
           >
             <Link
